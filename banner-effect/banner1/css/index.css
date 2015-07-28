@@ -1,0 +1,84 @@
+body {
+	margin: 0px; padding: 0px; text-align: center;
+}
+div {
+	margin: 0px; padding: 0px;
+}
+.banner {
+	background: url("../images/bg_banner.jpg") no-repeat top; width: 100%; overflow: hidden; padding-top: 106px;
+}
+.banner .showf {
+	margin: auto; width: 100%; height: 440px; overflow: hidden; position: relative;
+}
+.banner .shows {
+	left: 0px; top: 0px; width: 100%; overflow: hidden; float: left; display: none; position: absolute;
+}
+.banner .img {
+	margin: auto; display: block;
+}
+.banner .button {
+	margin: auto; display: block;
+}
+.banner .img {
+	margin-top: 12px;
+}
+.banner .button {
+	width: 132px;
+}
+.banner .button a {
+	background: url("../images/bg_banner_button.png") no-repeat 0px 0px; width: 23px; height: 23px; margin-right: 1px; float: left; display: inline;
+}
+.banner .button a.btn1 {
+	background-position: 0px 0px;
+}
+.banner .button a.btn2 {
+	background-position: -23px 0px;
+}
+.banner .button a.btn3 {
+	background-position: -46px 0px;
+}
+.banner .button a.btn4 {
+	background-position: -69px 0px;
+}
+.banner .button a.btn5 {
+	background-position: -92px 0px;
+}
+.banner .button a.btn6 {
+	background-position: -115px 0px;
+}
+.banner .button a.btn7 {
+	background-position: -138px 0px;
+}
+.banner .button a.btn8 {
+	background-position: -161px 0px;
+}
+.banner .button a.btn9 {
+	background-position: -184px 0px;
+}
+.banner .button a.btn1_fire {
+	background-position: 0px -23px;
+}
+.banner .button a.btn2_fire {
+	background-position: -23px -23px;
+}
+.banner .button a.btn3_fire {
+	background-position: -46px -23px;
+}
+.banner .button a.btn4_fire {
+	background-position: -69px -23px;
+}
+.banner .button a.btn5_fire {
+	background-position: -92px -23px;
+}
+.banner .button a.btn6_fire {
+	background-position: -115px -23px;
+}
+.banner .button a.btn7_fire {
+	background-position: -138px -23px;
+}
+.banner .button a.btn8_fire {
+	background-position: -161px -23px;
+}
+.banner .button a.btn9_fire {
+	background-position: -184px -23px;
+}

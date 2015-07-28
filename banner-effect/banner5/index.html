@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet">
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.carouFredSel.packed.js"></script>
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+$(function(){
+	$('.banner').width($(window).width());
+	$('.banner_mbox').hover(function(){
+		$(this).find(".banner_btn").stop(true,true).fadeTo("show",1);
+	},
+	function(){
+		$(this).find(".banner_btn").fadeOut();
+	});
+	
+	$(".banner_box").carouFredSel({
+		width: "100%",
+		auto 	: 10000,
+		prev	: {	
+			button	: "#btn_prev",
+			key		: "left"
+		},
+		next	: { 
+			button	: "#btn_next",
+			key		: "right"
+		},
+		scroll:{
+			fx:"fade"
+			}
+	});
+});
+</script>
+<div class="banner_mbox">
+    <div class="banner_box">
+        <div class="banner" style="background:url(img2/banner1.png) center no-repeat;"></div>
+        <div class="banner" style="background:url(img2/banner2.png) center no-repeat;"></div>
+        <div class="banner" style="background:url(img2/banner3.png) center no-repeat;"></div>
+    </div>
+    <div class="banner_btn">
+        <a class="prev" id="btn_prev" href="#"><img src="img2/prev_coin.png"></a>
+        <a class="next" id="btn_next" href="#"><img src="img2/next_coin.png"></a>
+    </div>
+</div>
+
+</body>
+</html>

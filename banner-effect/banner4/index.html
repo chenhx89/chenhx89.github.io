@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+body{margin:0px; padding:0px;}
+ul,li{list-style:none; padding:0px; margin:0px;}
+/*幻灯片*/
+.fullSlide {width:100%;position:relative;height:400px;background:#000;}
+.fullSlide .bd {margin:0 auto;position:relative;z-index:0;overflow:hidden;}
+.fullSlide .bd ul {width:100% !important;}
+.fullSlide .bd li {width:100% !important;height:400px;overflow:hidden;text-align:center;}
+.fullSlide .bd li a {display:block;height:400px;}
+.fullSlide .prev,.fullSlide .next {display:block;position:absolute;z-index:1;top:50%;margin-top:-30px;left:0;z-index:1;width:50px;height:50px;background:url(img1/slider-arrow.png) 0 0 no-repeat;cursor:pointer;display:none;}
+.fullSlide .next {left:auto;right:0;background-position:-50px 0;}
+.fullSlide .prev:hover{background-position:0 -50px;}
+.fullSlide .next:hover{background-position:-50px -50px;}
+</style>
+
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/superslide.2.1.js"></script>
+
+</head>
+
+<body>
+
+<!--slider-->
+<div class="fullSlide">
+  <div class="bd">
+    <ul>
+      <li _src="url(img1/slide-1.jpg)" style="background:#f8f8f8 center 0 no-repeat;"><a target="_blank" href="#"></a></li>
+      <li _src="url(img1/slide-2.jpg)" style="background:#f8f8f8 center 0 no-repeat;"><a target="_blank" href="#"></a></li>
+      <li _src="url(img1/slide-3.jpg)" style="background:#f8f8f8 center 0 no-repeat;"><a target="_blank" href=""></a></li>
+      <li _src="url(img1/slide-4.jpg)" style="background:#f8f8f8 center 0 no-repeat;"><a target="_blank" href="#"></a></li>
+    </ul>
+  </div>
+  <span class="prev"></span> <span class="next"></span>
+</div>
+<script type="text/javascript">
+jQuery(".fullSlide").hover(function() {
+    jQuery(this).find(".prev,.next").stop(true, true).fadeTo("show", 1)
+},
+function() {
+    jQuery(this).find(".prev,.next").fadeOut()
+});
+jQuery(".fullSlide").slide({
+    mainCell: ".bd ul",
+    effect: "fold",
+    autoPlay: true,
+    autoPage: true,
+    trigger: "click",
+    startFun: function(i) {
+        var curLi = jQuery(".fullSlide .bd li").eq(i);
+        if ( !! curLi.attr("_src")) {
+            curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+        }
+    }
+});
+</script>
+
+</body>
+</html>
