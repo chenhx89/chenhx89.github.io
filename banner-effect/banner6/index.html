@@ -1,0 +1,110 @@
+<!DOCTYPE>
+<!-- saved from url=(0053)http://www.superslide2.com/otherDemo/0.1/webSite.html -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Language" content="zh-CN">
+    <meta name="Keywords" content="SuperSlide,综合首页,多个slide组合">
+    <meta name="Description" content="SuperSlide,综合首页,多个slide组合">
+    <title>SuperSlide - 综合首页,多个slide组合</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="navBar">
+            <ul class="nav clearfix">
+                <li id="m1" class="m on">
+                    <h3><a target="_blank" href="">网站首页</a></h3></li>
+                <li id="m2" class="m">
+                    <h3><a target="_blank" href="">如何使用</a></h3>
+                    <ul class="sub" style="display: none;">
+                        <li><a href="">如何使用</a></li>
+                        <li><a href="">如何使用</a></li>
+                    </ul>
+                </li>
+                <li id="m3" class="m">
+                    <h3><a target="_blank" href="">查看参数</a></h3>
+                    <ul class="sub" style="display: none;">
+                        <li><a href="">查看参数</a></li>
+                    </ul>
+                </li>
+                <li id="m4" class="m">
+                    <h3><a target="_blank" href="">基础效果</a></h3>
+                    <ul class="sub" style="display: none;">
+                        <li><a href="">基础效果</a></li>
+                    </ul>
+                </li>
+                <li id="m5" class="m">
+                    <h3><a target="_blank" href="">扩展效果</a></h3>
+                    <ul class="sub" style="display: none;">
+                        <li><a href="">扩展效果</a></li>
+                        <li><a href="">扩展效果</a></li>
+                    </ul>
+                </li>
+                <li id="m6" class="m">
+                    <h3><a target="_blank" href="">SuperSlide</a></h3>
+                </li>
+                <li id="m7" class="m">
+                    <h3><a target="_blank" href="">大话主席</a></h3>
+                    <ul class="sub" style="display: none;">
+                        <li><a href="">大话主席</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <script type="text/javascript">
+        jQuery(".nav").slide({
+            type: "menu",
+            titCell: ".m",
+            targetCell: ".sub",
+            effect: "slideDown",
+            delayTime: 300,
+            triggerTime: 100,
+            returnDefault: true
+        });
+        </script>
+    </div>
+    <div class="banner">
+        <div class="bd">
+            <ul style="position: relative; width: 100%; height: 299px;">
+                <li class="img" style="background-image: url(img3/banner1.jpg); background-color: rgb(204, 225, 243);">
+                    <a target="_blank" href=""></a>
+                </li>
+                <li class="img" style="background-image: url(img3/banner2.jpg); background-color: rgb(188, 224, 255);">
+                    <a target="_blank" href=""></a>
+                </li>
+                <li class="img" style="background-image: url(img3/banner3.jpg); background-color: rgb(196, 207, 235);">
+                    <a target="_blank" href=""></a>
+                </li>
+                <li class="img" style="background-image: url(img3/banner4.jpg); background-color: rgb(197, 237, 253);">
+                    <a target="_blank" href=""></a>
+                </li>
+            </ul>
+        </div>
+        <div class="hd">
+            <ul>
+                <li class="">1</li>
+                <li class="">2</li>
+                <li class="on">3</li>
+                <li class="">4</li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+    jQuery(".banner").slide({
+        titCell: ".hd ul",
+        mainCell: ".bd ul",
+        effect: "fold",
+        autoPlay: true,
+        autoPage: true,
+        trigger: "click"
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="skin/new/css/css.css">
+<script type="text/javascript" src="skin/new/js/jquery-min-1.7.js"></script>
+<script src="skin/new/js/jquery.kinMaxShow-1.0.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="skin/new/js/js.js"></script>
+<script src="include/js/jquery/jquery.cookies.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="banner">
+        <div class="intro" id="mangoShow">
+        <div class="wrap clearFix">
+            <div class="cz_bannn" style="background:url(skin/new/images/banner_aa.jpg) no-repeat center top #ffa800">
+            </div>
+            <div>
+             <img src="skin/new/images/cz_ban_a.png" class="sub_1_1" >
+             <img src="skin/new/images/cz_ban_b.png" class="sub_1_2">
+             <img src="skin/new/images/cz_ban_c.png" class="sub_1_3" >
+             <img src="skin/new/images/cz_ban_d.png" class="sub_1_4">
+             <a href="way.html"><img src="skin/new/images/czx1.png" class="sub_1_5"></a>
+          	</div>
+        </div>
+
+        <div class="wrap clearFix">
+             <div class="cz_bannn" style="background:url(skin/new/images/banner_bbb.png) no-repeat center top ">
+          </div>
+             <div>
+             <img src="skin/new/images/czym_ccc.png" class="sub_2_1">
+             <img src="skin/new/images/czym_bbb.png" class="sub_2_2">
+             <a href="way.html"><img src="skin/new/images/czym_aaa.png" class="sub_2_3"></a>
+          </div>
+          </div>
+
+        <div class="wrap clearFix">
+            <div class="cz_bannn" style="background:url(skin/new/images/czym_ddd.png) no-repeat center top ">
+          </div>
+            <div>
+             <img src="skin/new/images/czym_eee.png" class="sub_3_1" >
+             <img src="skin/new/images/czyu_ccc.png" class="sub_3_2">
+             <a href="way.html"><img src="skin/new/images/czym_aaa.png" class="sub_3_3"></a>
+          </div>
+          </div>
+  </div>
+
+</div>
+
+<div class="qqkefu">
+    <ul>
+        <li class="top">TOP<span></span></li>
+                    <li class="qq_cza"><a href="tencent://message/?v=1&amp;uin=675067217&amp;site=qq&amp;menu=yes"><b class="a"></b>售前</a></li>
+                    <li class="qq_cza"><a href="tencent://message/?v=1&amp;uin=1242075809&amp;site=qq&amp;menu=yes"><b class="a"></b>售后</a></li>
+                    <li class="qq_cza"><a href="tencent://message/?v=1&amp;uin=601771414&amp;site=qq&amp;menu=yes"><b class="a"></b>售后</a></li>
+                    <li class="qq_cza"><a href="tencent://message/?v=1&amp;uin=304453996&amp;site=qq&amp;menu=yes"><b class="b"></b>在线咨询</a></li>
+        <li class="qq_czb">
+            <b class="c"></b>
+            <div class="erweima">
+                <p>关注华尔企业微信</p>
+                <i class="arrow3"></i>
+           </div>
+        </li>
+    </ul>
+</div>
+<style>
+#mangoShow .kinMaxShow_button{margin-left:-69px}
+</style>
+  <script type="text/javascript">
+      $(function () {
+          $("#mangoShow").kinMaxShow({
+              height: 700,
+              button: {
+                  showIndex: false,
+                  normal: { background: 'url(skin/new/images/fsl_a.png) no-repeat', marginRight: '8px', border: '0', left: '50%', bottom: '0', height: '36px', width: '38px' },
+                  focus: { background: 'url(skin/new/images/fsl_a.jpg) no-repeat', border: '0' }
+              },
+              callback: function (index, action) {
+                  switch (index) {
+                      case 0:
+                          if (action == 'fadeIn') {
+                              $(this).find('.sub_1_1').animate({ top: '134px' }, 600)
+                              $(this).find('.sub_1_2').animate({ bottom: '0' }, 600)
+                              $(this).find('.sub_1_3').animate({ top: '357px' }, 900)
+                              $(this).find('.sub_1_4').animate({ top: '260px' }, 900)
+                              $(this).find('.sub_1_5').animate({ top: '358px' }, 600)
+
+                          } else {
+                              $(this).find('.sub_1_1').animate({ top: '-163px' }, 600)
+                              $(this).find('.sub_1_2').animate({ bottom: '-286px' }, 600)
+                              $(this).find('.sub_1_3').animate({ bottom: '-336px' }, 600)
+                              $(this).find('.sub_1_4').animate({ top: '-236px' }, 600)
+                              $(this).find('.sub_1_5').animate({ top: '-358px' }, 600)
+                          };
+                          break;
+
+                      case 1:
+                          if (action == 'fadeIn') {
+                              $(this).find('.sub_2_1').animate({ left: '50%' }, 600)
+                              $(this).find('.sub_2_2').animate({ left: '50%' }, 900)
+                              $(this).find('.sub_2_3').animate({ top: '550px' }, 600)
+                          } else {
+                              $(this).find('.sub_2_1').animate({ left: '100%' }, 600)
+                              $(this).find('.sub_2_2').animate({ left: '0' }, 600)
+                              $(this).find('.sub_2_3').animate({ top: '550px' }, 600)
+                          };
+                          break;
+
+                      case 2:
+                          if (action == 'fadeIn') {
+                              $(this).find('.sub_3_1').animate({ top: '115px' }, 400)
+                              $(this).find('.sub_3_2').animate({ top: '400px' }, 800)
+                              $(this).find('.sub_1_3').animate({ top: '306px' }, 600)
+                          } else {
+                              $(this).find('.sub_3_1').animate({ top: '-162px' }, 400)
+                              $(this).find('.sub_3_2').animate({ bottom: '-297px' }, 800)
+                              $(this).find('.sub_3_3').animate({ top: '306px' }, 600)
+                          };
+                          break;
+
+                  }
+              }
+
+          });
+      });
+
+</script>
+
+</body>
+</html>
