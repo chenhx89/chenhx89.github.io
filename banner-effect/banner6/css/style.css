@@ -95,7 +95,7 @@ ul,li{
         line-height: 20px;
         padding: 4px 0;
         display: block;
-        background: url(img3/icon.png) 0 9px no-repeat;
+        background: url(../img3/icon.png) 0 9px no-repeat;
         color: #fff;
     }
     .nav .sub li a:hover {
@@ -160,7 +160,7 @@ ul,li{
         width: 11px;
         height: 11px;
         margin: 4px;
-        background: url(img3/dot-black.png) 0 0;
+        background: url(../img3/dot-black.png) 0 0;
         overflow: hidden;
         line-height: 9999px;
         filter: alpha(opacity=40);
